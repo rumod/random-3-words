@@ -1,14 +1,14 @@
 :root {
   color-scheme: light;
-  --ink: #302b3d;
-  --muted: #716b7d;
-  --paper: #fffaf1;
-  --pink: #ff7895;
-  --pink-dark: #e95879;
-  --yellow: #ffd75e;
-  --blue: #a9dcff;
-  --green: #bfe8c2;
-  --shadow: 0 7px 0 rgba(48, 43, 61, 0.14);
+  --ink: #4e4e59;
+  --muted: #888892;
+  --line: #ececf0;
+  --paper: #ffffff;
+  --pink: #f4b5de;
+  --yellow: #dff700;
+  --blue: #3f22ec;
+  --green: #03e29d;
+  --shadow: 0 16px 40px rgba(78, 78, 89, 0.08);
 }
 
 * {
@@ -24,11 +24,8 @@ body {
   min-height: 100svh;
   margin: 0;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 16% 17%, rgba(255, 215, 94, 0.25) 0 8rem, transparent 8.1rem),
-    radial-gradient(circle at 86% 82%, rgba(169, 220, 255, 0.27) 0 10rem, transparent 10.1rem),
-    var(--paper);
-  font-family: ui-rounded, "Arial Rounded MT Bold", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  background: var(--paper);
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
 }
 
 button,
@@ -39,10 +36,10 @@ select {
 }
 
 .generator {
-  width: min(100% - 2rem, 1120px);
+  width: min(100% - 2rem, 1080px);
   min-height: 100svh;
   margin: 0 auto;
-  padding: clamp(3rem, 9vh, 7rem) 0 2.5rem;
+  padding: clamp(3rem, 9vh, 6.5rem) 0 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,27 +52,40 @@ select {
 }
 
 .eyebrow {
-  width: fit-content;
-  margin: 0 auto 0.75rem;
-  padding: 0.42rem 0.72rem;
-  border: 2px solid var(--ink);
+  margin: 0 auto 1.15rem;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 4.5rem;
+  height: 0.35rem;
+  margin: 0 auto 0.85rem;
+  display: block;
   border-radius: 999px;
-  background: var(--yellow);
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.14em;
+  background: linear-gradient(
+    90deg,
+    var(--pink) 0 25%,
+    var(--yellow) 25% 50%,
+    var(--blue) 50% 75%,
+    var(--green) 75% 100%
+  );
 }
 
 h1 {
   margin: 0;
-  font-size: clamp(2.2rem, 6vw, 4.8rem);
-  line-height: 1;
-  letter-spacing: -0.055em;
+  font-size: clamp(2.25rem, 5.5vw, 4.4rem);
+  font-weight: 750;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
 }
 
 .description {
   margin: 1rem 0 0;
-  color: var(--muted);
+  color: #777781;
   font-size: clamp(0.95rem, 2vw, 1.1rem);
   line-height: 1.6;
   word-break: keep-all;
@@ -83,7 +93,7 @@ h1 {
 
 .result {
   width: 100%;
-  margin: clamp(2.25rem, 7vh, 4.5rem) 0 clamp(2.15rem, 6vh, 3.75rem);
+  margin: clamp(2.5rem, 7vh, 4.25rem) 0 clamp(2.25rem, 6vh, 3.5rem);
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
@@ -92,29 +102,31 @@ h1 {
 
 .word {
   min-width: 0;
-  min-height: clamp(8rem, 18vw, 12.5rem);
+  min-height: clamp(8.5rem, 17vw, 11.5rem);
   margin: 0;
   padding: clamp(1rem, 3vw, 2rem);
   display: grid;
   place-items: center;
-  border: 3px solid var(--ink);
-  border-radius: clamp(1.25rem, 2.5vw, 2rem);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--pink);
+  border-radius: clamp(1rem, 2vw, 1.5rem);
   background: #fff;
   box-shadow: var(--shadow);
   overflow-wrap: anywhere;
 }
 
 .word:nth-of-type(2) {
-  background: #fff6d6;
+  border-top-color: var(--yellow);
 }
 
 .word:nth-of-type(3) {
-  background: #eaf7ff;
+  border-top-color: var(--green);
 }
 
 .word span {
-  font-size: clamp(1.4rem, 3.5vw, 2.55rem);
-  font-weight: 900;
+  color: var(--ink);
+  font-size: clamp(1.35rem, 3.25vw, 2.35rem);
+  font-weight: 720;
   line-height: 1.25;
   letter-spacing: -0.045em;
   word-break: keep-all;
@@ -125,8 +137,9 @@ h1 {
 }
 
 .plus {
+  color: #b5b5bd;
   font-size: clamp(1.4rem, 3vw, 2.25rem);
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -134,32 +147,32 @@ h1 {
   min-width: 10.5rem;
   min-height: 3.65rem;
   padding: 0.9rem 1.7rem;
-  border: 3px solid var(--ink);
+  border: 0;
   border-radius: 999px;
   color: #fff;
-  background: var(--pink);
-  box-shadow: 0 6px 0 var(--ink);
-  font-size: 1.08rem;
-  font-weight: 900;
+  background: var(--blue);
+  box-shadow: 0 10px 24px rgba(63, 34, 236, 0.2);
+  font-size: 1rem;
+  font-weight: 700;
   cursor: pointer;
   touch-action: manipulation;
   transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
 }
 
 .draw-button:hover {
-  background: var(--pink-dark);
+  background: var(--blue);
   transform: translateY(-2px);
-  box-shadow: 0 8px 0 var(--ink);
+  box-shadow: 0 14px 28px rgba(63, 34, 236, 0.26);
 }
 
 .draw-button:active {
-  transform: translateY(5px);
-  box-shadow: 0 1px 0 var(--ink);
+  transform: translateY(1px);
+  box-shadow: 0 6px 14px rgba(63, 34, 236, 0.2);
 }
 
 .draw-button:focus-visible {
-  outline: 4px solid var(--blue);
-  outline-offset: 5px;
+  outline: 4px solid var(--pink);
+  outline-offset: 4px;
 }
 
 .hint,
@@ -172,7 +185,7 @@ h1 {
 }
 
 .notice {
-  color: #a43e56;
+  color: var(--muted);
 }
 
 @keyframes word-pop {
@@ -202,7 +215,7 @@ h1 {
     width: 100%;
     min-height: 5.4rem;
     padding: 1.1rem 1.25rem;
-    border-radius: 1.25rem;
+    border-radius: 1rem;
   }
 
   .plus {
