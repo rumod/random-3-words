@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="예상하지 못한 세 단어로 창작의 출발점을 만드는 랜덤 키워드 생성기">
+    <title>Random 3 Words</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="generator">
+      <header class="intro">
+        <p class="eyebrow">IDEA STARTER</p>
+        <h1>Random 3 Words</h1>
+        <p class="description">뜻밖의 세 단어로 오늘의 작업을 시작해 보세요.</p>
+      </header>
+
+      <section class="result" aria-label="무작위로 뽑은 세 단어" aria-live="polite" aria-atomic="true">
+        <p class="word"><span>카피바라</span></p>
+        <span class="plus" aria-hidden="true">+</span>
+        <p class="word"><span>한밤중의</span></p>
+        <span class="plus" aria-hidden="true">+</span>
+        <p class="word"><span>젤리</span></p>
+      </section>
+
+      <button class="draw-button" type="button">다시 뽑기</button>
+      <p class="hint">마음에 들지 않아도 괜찮아요. 또 누르면 되니까요!</p>
+
+      <noscript>
+        <p class="notice">새 단어를 뽑으려면 브라우저에서 JavaScript를 켜 주세요.</p>
+      </noscript>
+    </main>
+  </body>
+</html>
