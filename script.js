@@ -65,15 +65,9 @@ const words = [
 
   // 장소
   { text: "옥상", category: "장소" }, { text: "세탁소", category: "장소" },
-  { text: "심해", category: "장소" }, { text: "폐장한 놀이공원", category: "장소" },
-  { text: "동네 문방구", category: "장소" }, { text: "비밀 다락방", category: "장소" },
-  { text: "우주 정거장", category: "장소" }, { text: "해 질 녘 버스 정류장", category: "장소" },
-  { text: "끝없는 계단", category: "장소" }, { text: "새벽 시장", category: "장소" },
-  { text: "미로 같은 도서관", category: "장소" },
-  { text: "작은 섬", category: "장소" }, { text: "달의 뒷면", category: "장소" },
-  { text: "눈 덮인 온천", category: "장소" },
-  { text: "수족관 터널", category: "장소" }, { text: "24시간 편의점", category: "장소" },
-  { text: "아무도 없는 운동장", category: "장소" }, { text: "지도에 없는 마을", category: "장소" },
+  { text: "심해", category: "장소" }, { text: "동네 문방구", category: "장소" },
+  { text: "우주 정거장", category: "장소" }, { text: "작은 섬", category: "장소" },
+  { text: "수족관 터널", category: "장소" },
 
   // 감정과 분위기
   { text: "귀여운", category: "분위기" }, { text: "불길한", category: "분위기" },
@@ -94,11 +88,9 @@ const words = [
   { text: "졸면서 걷는", category: "동작" }, { text: "하늘로 떠오르는", category: "동작" },
   { text: "노래하는", category: "동작" }, { text: "거꾸로 자라는", category: "동작" },
   { text: "숨바꼭질하는", category: "동작" }, { text: "계속 커지는", category: "동작" },
-  { text: "빛을 모으는", category: "동작" }, { text: "편지를 삼키는", category: "동작" },
-  { text: "제자리에서 헤엄치는", category: "동작" }, { text: "그림자를 밟는", category: "동작" },
+  { text: "빛을 모으는", category: "동작" }, { text: "제자리에서 헤엄치는", category: "동작" },
   { text: "박수 치는", category: "동작" }, { text: "천천히 사라지는", category: "동작" },
-  { text: "모서리에 숨는", category: "동작" }, { text: "꿈속을 청소하는", category: "동작" },
-  { text: "혼자서 축하하는", category: "동작" }, { text: "별을 세는", category: "동작" },
+  { text: "모서리에 숨는", category: "동작" },
   { text: "꼬리를 흔드는", category: "동작" }, { text: "아무 말 없이 춤추는", category: "동작" },
 
   // 상태
@@ -129,13 +121,10 @@ const words = [
 
   // 음식
   { text: "젤리", category: "음식" }, { text: "붕어빵", category: "음식" },
-  { text: "레몬 사탕", category: "음식" }, { text: "김이 나는 만두", category: "음식" },
-  { text: "체리 파이", category: "음식" }, { text: "별 모양 쿠키", category: "음식" },
-  { text: "수박 한 조각", category: "음식" }, { text: "식은 감자튀김", category: "음식" },
-  { text: "무지개 떡", category: "음식" }, { text: "민트초코", category: "음식" },
+  { text: "레몬 사탕", category: "음식" }, { text: "체리 파이", category: "음식" },
+  { text: "민트초코", category: "음식" },
   { text: "문어 소시지", category: "음식" }, { text: "달걀 프라이", category: "음식" },
-  { text: "딸기 우유", category: "음식" }, { text: "네모난 도넛", category: "음식" },
-  { text: "고추냉이 아이스크림", category: "음식" }, { text: "대왕 푸딩", category: "음식" },
+  { text: "딸기 우유", category: "음식" },
 
   // 직업과 인물
   { text: "우체부", category: "직업" }, { text: "마술사", category: "직업" },
