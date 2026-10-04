@@ -10,20 +10,13 @@ const words = [
   { text: "나무늘보", category: "동물" }, { text: "바다거북", category: "동물" },
   { text: "까마귀", category: "동물" }, { text: "도롱뇽", category: "동물" },
   { text: "반딧불이", category: "동물" }, { text: "복어", category: "동물" },
-  { text: "아기 염소", category: "동물" }, { text: "털북숭이 매머드", category: "동물" },
+  { text: "털북숭이", category: "상태" }, { text: "매머드", category: "동물" },
 
   // 사물
   { text: "우산", category: "사물" }, { text: "주전자", category: "사물" },
-  { text: "망원경", category: "사물" }, { text: "오르골", category: "사물" },
-  { text: "고무장갑", category: "사물" }, { text: "성냥갑", category: "사물" },
-  { text: "낡은 열쇠", category: "사물" }, { text: "종이비행기", category: "사물" },
-  { text: "회중시계", category: "사물" }, { text: "빈 액자", category: "사물" },
-  { text: "손전등", category: "사물" }, { text: "스노볼", category: "사물" },
-  { text: "빨간 실", category: "사물" }, { text: "도미노", category: "사물" },
-  { text: "확성기", category: "사물" }, { text: "풍선껌 기계", category: "사물" },
-  { text: "나침반", category: "사물" }, { text: "보온병", category: "사물" },
-  { text: "장난감 왕관", category: "사물" }, { text: "투명한 자", category: "사물" },
-  { text: "태엽", category: "사물" }, { text: "구겨진 지도", category: "사물" },
+  { text: "오르골", category: "사물" }, { text: "성냥갑", category: "사물" },
+  { text: "낡은", category: "상태" }, { text: "스노볼", category: "사물" },
+  { text: "장난감", category: "사물" },
 
   // 식물
   { text: "민들레", category: "식물" }, { text: "선인장", category: "식물" },
@@ -32,23 +25,22 @@ const words = [
   { text: "해바라기", category: "식물" }, { text: "이끼", category: "식물" },
   { text: "대나무", category: "식물" }, { text: "라벤더", category: "식물" },
   { text: "식충식물", category: "식물" }, { text: "목화송이", category: "식물" },
-  { text: "버드나무", category: "식물" }, { text: "야광버섯", category: "식물" },
+  { text: "버드나무", category: "식물" }, { text: "야광", category: "상태" },
   { text: "고사리", category: "식물" }, { text: "덩굴장미", category: "식물" },
   { text: "도토리", category: "식물" }, { text: "파리지옥", category: "식물" },
-  { text: "작은 새싹", category: "식물" }, { text: "이름 모를 들꽃", category: "식물" },
+  { text: "작은", category: "상태" }, { text: "새싹", category: "식물" },
 
   // 재질
   { text: "유리", category: "재질" }, { text: "벨벳", category: "재질" },
-  { text: "고무", category: "재질" }, { text: "대리석", category: "재질" },
-  { text: "양철", category: "재질" }, { text: "비눗방울", category: "재질" },
-  { text: "골판지", category: "재질" }, { text: "도자기", category: "재질" },
-  { text: "솜사탕 같은", category: "재질" }, { text: "크롬", category: "재질" },
-  { text: "반투명한 비닐", category: "재질" }, { text: "젖은 모래", category: "재질" },
-  { text: "반짝이 가루", category: "재질" }, { text: "녹슨 철", category: "재질" },
-  { text: "말랑한 젤", category: "재질" }, { text: "거친 나무", category: "재질" },
+  { text: "대리석", category: "재질" }, { text: "비눗방울", category: "재질" },
+  { text: "도자기", category: "재질" }, { text: "솜사탕", category: "음식" },
+  { text: "크롬", category: "재질" }, { text: "반투명한", category: "상태" },
+  { text: "비닐", category: "재질" }, { text: "젖은", category: "상태" },
+  { text: "모래", category: "재질" }, { text: "반짝이", category: "재질" },
+  { text: "가루", category: "재질" }, { text: "녹슨 철", category: "재질" },
+  { text: "말랑한", category: "감각" }, { text: "젤", category: "재질" },
   { text: "얼음", category: "재질" }, { text: "레이스", category: "재질" },
-  { text: "진주", category: "재질" }, { text: "깃털", category: "재질" },
-  { text: "주름진 은박지", category: "재질" }, { text: "깨지기 쉬운 설탕", category: "재질" },
+  { text: "진주", category: "재질" }, { text: "은박지", category: "재질" },
 
   // 색상
   { text: "레몬색", category: "색상" }, { text: "먹물색", category: "색상" },
@@ -64,10 +56,8 @@ const words = [
   { text: "그림자색", category: "색상" }, { text: "사탕 포장지 같은 색", category: "색상" },
 
   // 장소
-  { text: "옥상", category: "장소" }, { text: "세탁소", category: "장소" },
-  { text: "심해", category: "장소" }, { text: "동네 문방구", category: "장소" },
-  { text: "우주 정거장", category: "장소" }, { text: "작은 섬", category: "장소" },
-  { text: "수족관 터널", category: "장소" },
+  { text: "심해", category: "장소" }, { text: "작은 섬", category: "장소" },
+  { text: "수족관", category: "장소" },
 
   // 감정과 분위기
   { text: "귀여운", category: "분위기" }, { text: "불길한", category: "분위기" },
@@ -76,35 +66,30 @@ const words = [
   { text: "졸린", category: "상태" }, { text: "뻔뻔한", category: "분위기" },
   { text: "낯선", category: "분위기" }, { text: "다정한", category: "분위기" },
   { text: "수상한", category: "분위기" }, { text: "용감한 척하는", category: "감정" },
-  { text: "괜히 신나는", category: "감정" }, { text: "조금 억울한", category: "감정" },
-  { text: "이유 없이 평화로운", category: "분위기" }, { text: "몹시 진지한", category: "분위기" },
-  { text: "비밀스러운", category: "분위기" }, { text: "어설프게 우아한", category: "분위기" },
-  { text: "너무 조용한", category: "분위기" }, { text: "기묘하게 익숙한", category: "분위기" },
-  { text: "왠지 자랑스러운", category: "감정" }, { text: "세상에서 제일 느긋한", category: "분위기" },
+  { text: "신나는", category: "감정" }, { text: "평화로운", category: "분위기" },
+  { text: "진지한", category: "분위기" }, { text: "비밀스러운", category: "분위기" },
+  { text: "우아한", category: "분위기" }, { text: "조용한", category: "분위기" },
+  { text: "기묘하게 익숙한", category: "분위기" }, { text: "자랑스러운", category: "감정" },
+  { text: "느긋한", category: "분위기" },
 
   // 동작
   { text: "기다리는", category: "동작" }, { text: "녹아내리는", category: "동작" },
   { text: "빙글빙글 도는", category: "동작" }, { text: "몰래 따라오는", category: "동작" },
-  { text: "졸면서 걷는", category: "동작" }, { text: "하늘로 떠오르는", category: "동작" },
+  { text: "하늘로 떠오르는", category: "동작" },
   { text: "노래하는", category: "동작" }, { text: "거꾸로 자라는", category: "동작" },
   { text: "숨바꼭질하는", category: "동작" }, { text: "계속 커지는", category: "동작" },
-  { text: "빛을 모으는", category: "동작" }, { text: "제자리에서 헤엄치는", category: "동작" },
-  { text: "박수 치는", category: "동작" }, { text: "천천히 사라지는", category: "동작" },
+  { text: "빛을 모으는", category: "동작" }, { text: "헤엄치는", category: "동작" },
+  { text: "천천히 사라지는", category: "동작" },
   { text: "모서리에 숨는", category: "동작" },
   { text: "꼬리를 흔드는", category: "동작" }, { text: "아무 말 없이 춤추는", category: "동작" },
 
   // 상태
   { text: "축축한", category: "상태" }, { text: "뒤집힌", category: "상태" },
   { text: "금이 간", category: "상태" }, { text: "부풀어 오른", category: "상태" },
-  { text: "반쯤 투명한", category: "상태" }, { text: "전기가 나간", category: "상태" },
-  { text: "길을 잃은", category: "상태" }, { text: "잠겨 있는", category: "상태" },
-  { text: "너무 오래된", category: "상태" }, { text: "아직 따뜻한", category: "상태" },
-  { text: "조립되지 않은", category: "상태" }, { text: "한쪽만 빛나는", category: "상태" },
-  { text: "정전기가 가득한", category: "상태" }, { text: "바람 빠진", category: "상태" },
-  { text: "얼어붙은", category: "상태" }, { text: "리본으로 묶인", category: "상태" },
-  { text: "주인을 잃은", category: "상태" }, { text: "시간이 멈춘", category: "상태" },
+  { text: "반쯤 투명한", category: "상태" }, { text: "잠겨 있는", category: "상태" },
+  { text: "아직 따뜻한", category: "상태" }, { text: "한쪽만 빛나는", category: "상태" },
+  { text: "얼어붙은", category: "상태" },
   { text: "짝이 맞지 않는", category: "상태" }, { text: "조금 모자란", category: "상태" },
-  { text: "비밀을 품은", category: "상태" }, { text: "아무도 기억하지 못하는", category: "상태" },
 
   // 날씨와 자연
   { text: "소나기", category: "날씨" }, { text: "안개", category: "날씨" },
@@ -117,7 +102,7 @@ const words = [
   { text: "바닷바람", category: "날씨" }, { text: "달빛", category: "자연" },
   { text: "구름 그림자", category: "자연" }, { text: "새벽 이슬", category: "자연" },
   { text: "모래 폭풍", category: "날씨" }, { text: "밤의 무지개", category: "자연" },
-  { text: "갑자기 내리는 눈", category: "날씨" }, { text: "바람 없는 오후", category: "날씨" },
+  { text: "갑자기 내리는 눈", category: "날씨" },
 
   // 음식
   { text: "젤리", category: "음식" }, { text: "붕어빵", category: "음식" },
@@ -132,28 +117,16 @@ const words = [
 
   // 시대와 이야기 요소
   { text: "백악기의", category: "시대" }, { text: "먼 미래의", category: "시대" },
-  { text: "한밤중의", category: "시간" }, { text: "세기말의", category: "시대" },
-  { text: "아주 먼 옛날의", category: "시대" }, { text: "5분 뒤의", category: "시간" },
-  { text: "마지막 여름의", category: "시간" }, { text: "월요일 아침의", category: "시간" },
-  { text: "다음 계절을 기다리는", category: "시간" }, { text: "새해 첫날의", category: "시간" },
-  { text: "아직 오지 않은 봄의", category: "시간" },
+  { text: "세기말의", category: "시대" }, { text: "아주 먼 옛날의", category: "시대" },
 
   // 소리와 감각
-  { text: "딸랑딸랑", category: "소리" }, { text: "사각사각", category: "소리" },
   { text: "톡 쏘는", category: "감각" }, { text: "보송보송한", category: "감각" },
   { text: "끈적끈적한", category: "감각" }, { text: "반짝반짝", category: "감각" },
-  { text: "우당탕", category: "소리" }, { text: "귓가에 맴도는", category: "소리" },
   { text: "레몬 향이 나는", category: "감각" }, { text: "발끝이 간지러운", category: "감각" },
-  { text: "종소리 같은", category: "소리" }, { text: "물속에서 들리는", category: "소리" },
-  { text: "아삭아삭", category: "소리" }, { text: "폭신폭신한", category: "감각" },
+  { text: "폭신폭신한", category: "감각" },
   { text: "차갑고 매끄러운", category: "감각" }, { text: "햇볕 냄새가 나는", category: "감각" },
-  { text: "아주 작은 속삭임", category: "소리" }, { text: "쿵 하고 떨어지는", category: "소리" },
   { text: "탄산처럼 톡톡 튀는", category: "감각" }, { text: "구름을 만지는 느낌", category: "감각" },
-  { text: "멀리서 들리는 휘파람", category: "소리" }, { text: "새 책 냄새가 나는", category: "감각" },
-
-  // 환상과 기술
-  { text: "투명 망토", category: "환상" }, { text: "용의 알", category: "환상" },
-  { text: "비밀 암호", category: "기술" },
+  { text: "새 책 냄새가 나는", category: "감각" },
 
   // 존재
   { text: "고양이", category: "존재" }, { text: "새", category: "존재" },
